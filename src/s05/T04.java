@@ -1,16 +1,19 @@
 package s05;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class T04 {
 
     public static void main(String[] args) {
-        String name = requestString();
-        Alphabet letter = Alphabet.valueOf(name);
-        int index = letter.ordinal() + 1;
-        System.out.println(name + " - это " + index + "-я буква латинского алфавита");
+        String str = requestString().toUpperCase();
+        if (Alphabet.strCheck(str)) {
+            int index = Alphabet.getIndex(str);
+            //System.out.println(str + " - это " + index + "-я буква латинского алфавита");
+        } else {
+            System.out.println("Введенный символ не является буквой латинского алфавита");
+        }
     }
-
 
     static String requestString() {
         Scanner scanner = new Scanner(System.in);
