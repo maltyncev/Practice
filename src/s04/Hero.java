@@ -35,8 +35,13 @@ public class Hero {
         this.speed = 100 - this.power;
     }
 
-    public void hit(Hero hero) {
-        hero.health = hero.health - this.power;
+    public void handleDamadge(int damage) {
+        health = health - damage;
+    }
+
+    public void hit(Hero hero)
+    {
+        hero.handleDamadge(this.power);
     }
 
     @Override

@@ -4,27 +4,21 @@ import s04.Hero;
 
 public class GodTimeHero extends Hero {
     private int godMinutes;
-
-    public GodTimeHero(int godMinutes) {
-        this.godMinutes = godMinutes;
-    }
+    private long creationTime;
 
     public GodTimeHero(int power, int godMinutes) {
         super(power);
         this.godMinutes = godMinutes;
-    }
-
-    public void pause() {
-        try {
-            Thread.sleep(godMinutes);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+        this.creationTime = System.currentTimeMillis();
     }
 
     @Override
-    public void hit(Hero hero) {
-        pause();
-        hero.health = hero.health - this.power;
+    public void handleDamadge(int damage) {
+        long time = System.currentTimeMillis();
+        if ((time - creationTime) > godMinutes) {
+            super.handleDamadge(damage);
+        } else {
+            return;
+        }
     }
 }
