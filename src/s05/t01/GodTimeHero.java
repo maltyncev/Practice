@@ -17,8 +17,6 @@ public class GodTimeHero extends Hero {
         long time = System.currentTimeMillis();
         if ((time - creationTime) > godMinutes) {
             super.handleDamadge(damage);
-        } else {
-            return;
         }
     }
 }
