@@ -4,6 +4,7 @@ public class Operation {
     private int leftOperand;
     private int rightOperand;
     private int previous;
+    private int result;
 
 
     public Operation (int leftOperand, int rightOperand) {
@@ -13,16 +14,12 @@ public class Operation {
 
     int calculate(int leftOperand, int rightOperand)
     {
-        return leftOperand - rightOperand;
+        result = leftOperand - rightOperand;
+        previous = result;
+        return result;
     }
 
-    int calculate2 (int leftOperand, int rightOperand) {
-        previous = calculate(leftOperand, rightOperand);
+    int returnPrevious () {
         return previous;
-    }
-
-    int returnPrevious()
-    {
-        return calculate2(leftOperand,rightOperand);
     }
 }

@@ -25,6 +25,5 @@ public class T02 {
         System.out.println(addition.returnPrevious());
         System.out.println(multiplication.calculate(leftOperand,rightOperand));
         System.out.println(multiplication.returnPrevious());
-
     }
 }
