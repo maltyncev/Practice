@@ -6,7 +6,7 @@ public class Addition extends Operation {
     }
 
     @Override
-    int calculate(int leftOperand, int rightOperand) {
+    protected int doOperation(int leftOperand, int rightOperand) {
         return leftOperand + rightOperand;
     }
 }

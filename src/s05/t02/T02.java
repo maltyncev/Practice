@@ -25,14 +25,5 @@ public class T02 {
         System.out.println(addition.returnPrevious());
         System.out.println(multiplication.calculate(leftOperand,rightOperand));
         System.out.println(multiplication.returnPrevious());
-
-        System.out.println("Введите левый операнд: ");
-        leftOperand = scanner.nextInt();
-        System.out.println("Введите правый операнд: ");
-        rightOperand = scanner.nextInt();
-        System.out.println(addition.calculate(leftOperand,rightOperand));
-        System.out.println(addition.returnPrevious());
-        System.out.println(multiplication.calculate(leftOperand,rightOperand));
-        System.out.println(multiplication.returnPrevious());
     }
 }
