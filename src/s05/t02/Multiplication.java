@@ -5,18 +5,8 @@ public class Multiplication extends Operation {
         super(leftOperand, rightOperand);
     }
 
-    int result;
-    int preResult;
-
     @Override
     int calculate(int leftOperand, int rightOperand) {
-        preResult = result;
-        result = leftOperand * rightOperand;
-        return result;
-    }
-
-    @Override
-    int returnPrevious() {
-        return preResult;
+        return leftOperand * rightOperand;
     }
 }
