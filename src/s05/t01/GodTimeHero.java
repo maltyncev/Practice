@@ -13,10 +13,10 @@ public class GodTimeHero extends Hero {
     }
 
     @Override
-    public void handleDamadge(int damage) {
+    public void handleDamage(int damage) {
         long time = System.currentTimeMillis();
         if ((time - creationTime) > godMinutes) {
-            super.handleDamadge(damage);
+            super.handleDamage(damage);
         } else {
             return;
         }

@@ -19,10 +19,6 @@ public class Hero {
         return speed;
     }
 
-    public void setHealth (int health) {
-        this.health = health;
-    }
-
     public Hero () {
         health = INITIAL_HEALTH;
         power = 50;
@@ -35,13 +31,13 @@ public class Hero {
         this.speed = 100 - this.power;
     }
 
-    public void handleDamadge(int damage) {
+    public void handleDamage(int damage) {
         health = health - damage;
     }
 
     public void hit(Hero hero)
     {
-        hero.handleDamadge(this.power);
+        hero.handleDamage(this.power);
     }
 
     @Override
