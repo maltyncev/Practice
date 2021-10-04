@@ -6,12 +6,12 @@ public class T02 {
         Addition addition = new Addition();
         Multiplication multiplication = new Multiplication();
 
-        addition.calculate(1,2);
-        multiplication.calculate(1,2);
+        addition.returnResult(1,2);
+        multiplication.returnResult(1,2);
 
-        addition.calculate(3,4);
+        addition.returnResult(3,4);
         addition.returnPrevious();
-        multiplication.calculate(3,4);
+        multiplication.returnResult(3,4);
         multiplication.returnPrevious();
     }
 }
