@@ -1,7 +1,5 @@
 package s05.t02;
 
-import java.util.Scanner;
-
 public class T02 {
     public static void main(String[] args) {
 
