@@ -5,25 +5,15 @@ import java.util.Scanner;
 public class T02 {
     public static void main(String[] args) {
 
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Введите левый операнд: ");
-        int leftOperand = scanner.nextInt();
-        System.out.println("Введите правый операнд: ");
-        int rightOperand = scanner.nextInt();
+        Addition addition = new Addition();
+        Multiplication multiplication = new Multiplication();
 
-        Addition addition = new Addition(leftOperand, rightOperand);
-        Multiplication multiplication = new Multiplication(leftOperand, rightOperand);
+        addition.calculate(1,2);
+        multiplication.calculate(1,2);
 
-        System.out.println(addition.calculate(leftOperand,rightOperand));
-        System.out.println(multiplication.calculate(leftOperand,rightOperand));
-
-        System.out.println("Введите левый операнд: ");
-        leftOperand = scanner.nextInt();
-        System.out.println("Введите правый операнд: ");
-        rightOperand = scanner.nextInt();
-        System.out.println(addition.calculate(leftOperand,rightOperand));
-        System.out.println(addition.returnPrevious());
-        System.out.println(multiplication.calculate(leftOperand,rightOperand));
-        System.out.println(multiplication.returnPrevious());
+        addition.calculate(3,4);
+        addition.returnPrevious();
+        multiplication.calculate(3,4);
+        multiplication.returnPrevious();
     }
 }

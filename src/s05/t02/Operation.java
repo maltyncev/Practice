@@ -1,18 +1,16 @@
 package s05.t02;
 
 public class Operation {
-//    protected int leftOperand;
-//    protected int rightOperand;
+    protected int result;
     protected int previousResult;
 
-    public Operation () {}
-
     int calculate(int leftOperand, int rightOperand) {
-        previousResult = doOperation(leftOperand, rightOperand);
-        return previousResult;
+        previousResult = result;
+        result = doOperation(leftOperand, rightOperand);
+        return result;
     }
 
-    protected int doOperation(int leftOperand, int rightOperand) {
+    int doOperation(int leftOperand, int rightOperand) {
         return leftOperand - rightOperand;
     }
 
