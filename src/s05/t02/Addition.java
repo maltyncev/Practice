@@ -2,7 +2,7 @@ package s05.t02;
 
 public class Addition extends Operation {
     Addition (int leftOperand, int rightOperand) {
-        super(leftOperand, rightOperand);
+        super();
     }
 
     @Override

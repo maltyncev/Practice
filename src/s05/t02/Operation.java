@@ -3,23 +3,24 @@ package s05.t02;
 public class Operation {
     private int leftOperand;
     private int rightOperand;
-    private int previous;
-    private int result;
 
-
-    public Operation (int leftOperand, int rightOperand) {
-        this.leftOperand = leftOperand;
-        this.rightOperand = rightOperand;
+    public Operation () {
+//        this.leftOperand = leftOperand;
+//        this.rightOperand = rightOperand;
     }
 
     int calculate(int leftOperand, int rightOperand)
     {
-        result = leftOperand - rightOperand;
-        previous = result;
-        return result;
+        return leftOperand - rightOperand;
+    }
+
+    int calculate2() {
+        int result = calculate(leftOperand, rightOperand);
+        int previous = result;
+        return previous;
     }
 
     int returnPrevious () {
-        return previous;
+        return calculate2();
     }
 }
