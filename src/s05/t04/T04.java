@@ -7,8 +7,8 @@ public class T04 {
     public static void main(String[] args) {
         String str = requestString().toUpperCase();
         if (Alphabet.strCheck(str)) {
-            int index = Alphabet.getIndex(str);
-            //System.out.println(str + " - это " + index + "-я буква латинского алфавита");
+            int position = Alphabet.getPosition(str);
+            System.out.println(str + " - это " + position + "-я буква латинского алфавита");
         } else {
             System.out.println("Введенный символ не является буквой латинского алфавита");
         }

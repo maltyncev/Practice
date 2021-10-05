@@ -4,10 +4,10 @@ import java.util.Arrays;
 
 public enum Alphabet {A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z;
 
-    public static int getIndex (String str) {
+    public static int getPosition (String str) {
         Alphabet letter = Alphabet.valueOf(str);
-        int index = letter.ordinal() + 1;
-        return index;
+        int position = letter.ordinal() + 1;
+        return position;
     }
 
     public static boolean strCheck (String str) {
