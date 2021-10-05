@@ -5,8 +5,8 @@ import java.util.Collections;
 public class Hero {
     static int INITIAL_HEALTH = 100;
 
-    public int health;
-    public final int power;
+    protected int health;
+    protected final int power;
     private final int speed;
 
     public Hero () {
