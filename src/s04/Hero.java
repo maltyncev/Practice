@@ -9,16 +9,6 @@ public class Hero {
     public final int power;
     private final int speed;
 
-    public int getHealth() {
-        return health;
-    }
-    public int getPower() {
-        return power;
-    }
-    public int getSpeed() {
-        return speed;
-    }
-
     public Hero () {
         health = INITIAL_HEALTH;
         power = 50;
@@ -42,7 +32,7 @@ public class Hero {
 
     @Override
     public String toString() {
-        return "helth \t" + repeatAsterisk(health / 10) + "\n" +
+        return "health \t" + repeatAsterisk(health / 10) + "\n" +
                 "power \t" + repeatAsterisk(power / 10) + "\n" +
                 "speed \t" + repeatAsterisk(speed / 10) + "\n";
     }
