@@ -1,7 +1,7 @@
 package s04;
 
 public class SuperHero extends Hero {
-    private int coef;
+    private final int coef;
 
     public SuperHero(int coef) {
         this.coef = coef;

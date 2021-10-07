@@ -3,8 +3,8 @@ package s05.t01;
 import s04.Hero;
 
 public class GodTimeHero extends Hero {
-    private int godMinutes;
-    private long creationTime;
+    private final int godMinutes;
+    private final long creationTime;
 
     public GodTimeHero(int power, int godMinutes) {
         super(power);
