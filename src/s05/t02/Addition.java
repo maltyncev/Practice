@@ -4,6 +4,8 @@ public class Addition extends Operation {
 
     @Override
     int calculate(int leftOperand, int rightOperand) {
-        return leftOperand + rightOperand;
+        previousResult = result;
+        result = leftOperand + rightOperand;
+        return result;
     }
 }

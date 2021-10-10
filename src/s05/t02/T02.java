@@ -6,12 +6,17 @@ public class T02 {
         Addition addition = new Addition();
         Multiplication multiplication = new Multiplication();
 
-        addition.returnResult(1,2);
-        multiplication.returnResult(1,2);
+        System.out.println(addition.calculate(1,2));
+        System.out.println(multiplication.calculate(1,2));
 
-        addition.returnResult(3,4);
-        addition.returnPrevious();
-        multiplication.returnResult(3,4);
-        multiplication.returnPrevious();
+        System.out.println(addition.calculate(3,4));
+        System.out.println(addition.returnPrevious());
+        System.out.println(multiplication.calculate(3,4));
+        System.out.println(multiplication.returnPrevious());
+
+        System.out.println(addition.calculate(5,6));
+        System.out.println(addition.returnPrevious());
+        System.out.println(multiplication.calculate(5,6));
+        System.out.println(multiplication.returnPrevious());
     }
 }
