@@ -4,7 +4,7 @@ public class LowerCaseHandler implements Handler {
     @Override
     public String handleMessage(String message) {
         if (message == null) {
-            throw new IllegalArgumentException("message == null");
+            return "null";
         } else {
             message = message.toLowerCase();
             message = message.trim();
